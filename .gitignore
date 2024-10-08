@@ -5,7 +5,7 @@ __pycache__/ # Cache de compilação
 *.pyd        # Bibliotecas compiladas
 
 # Pastas do Django
-**/migrations/ # Diretório de migrações (gerado automaticamente pelo Django)
+**/migrations/*.py # Diretório de migrações (gerado automaticamente pelo Django)
 
 # Configurações de ambiente virtual
 venv/
