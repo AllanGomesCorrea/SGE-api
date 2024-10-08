@@ -13,6 +13,21 @@ Certifique-se de que você tenha os seguintes requisitos instalados em seu siste
 
 ## Instalação das Dependências
 
+Instalar o ambiente virtual:
+```bash
+python3 -m venv venv
+```
+
+Ativar o ambiente virtual (Mac):
+```bash
+source venv/bin/activate
+```
+
+Ativar o ambiente virtual (Mac):
+```bash
+source venv/Scripts/activate
+```
+
 Com o ambiente virtual ativado, instale as dependências do projeto usando o comando:
 ```bash
 pip install -r requirements.txt
@@ -26,10 +41,15 @@ Após instalar as dependências, aplique as migrations no banco de dados com o c
 python manage.py migrate
 ```
 
+Criar um super usuário para o sistema:
+```bash
+python manage.py createsuperuser
+```
+
 Agora o projeto jã pode ser inicializado com o comando:
 ```bash
 python manage.py runserver
 ```
 
 Após isso, o sistema estará pronto para ser acessado em:
-[http://localhost:8000](http://localhost:8000)
+[http://localhost:8000/admin/](http://localhost:8000/admin/)
